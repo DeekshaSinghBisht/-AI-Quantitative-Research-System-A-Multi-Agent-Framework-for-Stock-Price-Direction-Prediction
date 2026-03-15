@@ -97,49 +97,6 @@ The platform is built as a collection of **41 independent agent classes**, each 
 
 ---
 
-## 📁 Repository Structure
-
-```
-ai-quant-research-system/
-│
-├── IDEAS_FINAL_15_03.ipynb          # ← Main notebook (run this)
-│
-├── README.md                        # This file
-│
-├── docs/
-│   ├── IDEAS_Internship_Report.docx # Full project report
-│   ├── IDEAS_Project_Presentation.pptx
-│   └── IDEAS_Data_Model_Summary.docx
-│
-├── config/
-│   └── system_config.json           # Auto-generated on first run
-│
-├── data/                            # Auto-populated by pipeline
-│   ├── raw/
-│   │   ├── aapl_ohlcv.csv
-│   │   ├── msft_ohlcv.csv
-│   │   ├── spy_benchmark.csv
-│   │   ├── news_aapl.json
-│   │   └── news_msft.json
-│   └── processed/
-│       ├── features_aapl_selected.csv.gz
-│       └── features_msft_selected.csv.gz
-│
-├── models/                          # Auto-saved trained weights
-│   ├── prediction_agent_AAPL_*.pkl
-│   ├── prediction_agent_MSFT_*.pkl
-│   └── lstm_model_aapl.h5
-│
-└── results/
-    ├── backtest_aapl_equity.csv
-    ├── backtest_msft_equity.csv
-    ├── risk_metrics_summary.json
-    └── reports/
-        └── research_report_*.html
-```
-
----
-
 ## ⚡ Quickstart
 
 ### Option 1: Run on Google Colab (Recommended)
@@ -452,8 +409,6 @@ All generated files are saved to Google Drive at:
 | MC paths | `results/monte_carlo_*.npy` | (5000, 252) array of simulated returns |
 | Risk summary | `results/risk_metrics_summary.json` | VaR, CVaR, Sharpe, beta, etc. |
 | HTML report | `results/reports/research_report_*.html` | Full interactive research report |
-
-> 📂 See [`docs/IDEAS_Data_Model_Summary.docx`](docs/IDEAS_Data_Model_Summary.docx) for the complete data and model weights documentation with schema details and reproduction steps.
 
 ---
 
